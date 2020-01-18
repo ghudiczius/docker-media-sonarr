@@ -9,7 +9,7 @@ RUN apt-get update && \
     curl -Lo /tmp/sonarr.deb "http://apt.sonarr.tv/pool/main/n/nzbdrone/nzbdrone_${VERSION}_all.deb" && \
     dpkg -i /tmp/sonarr.deb && \
     mkdir /config /downloads /series && \
-    chown -R 1000:1000 /config /downloads /series /opt/sonarr
+    chown -R 1000:1000 /config /downloads /series
 
 USER 1000
 VOLUME /config /downloads /series
