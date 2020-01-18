@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker build . -t "ghudiczius/sonarr:${SOURCE_BRANCH}" --build-arg "VERSION=${SOURCE_BRANCH}"
