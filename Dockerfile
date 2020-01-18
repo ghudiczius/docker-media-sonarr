@@ -3,7 +3,7 @@ FROM mono:6.8.0.96
 ARG VERSION
 
 RUN apt-get update && \
-    apt-get -y install mediainfo && \
+    apt-get -y install mediainfo sqlite3 && \
     groupadd -g 1000 sonarr && \
     useradd -d /home/sonarr -g 1000 -m -s /bin/bash -u 1000 sonarr && \
     curl -Lo /tmp/sonarr.deb "http://apt.sonarr.tv/pool/main/n/nzbdrone/nzbdrone_${VERSION}_all.deb" && \
