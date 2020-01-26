@@ -1,6 +1,6 @@
 # Sonarr
 
-Simple docker image for Sonarr without any bloat, built on the official mono image. Sonarr runs as user `sonarr` with `uid` and `gid` 1000.
+Simple docker image for Sonarr without any bloat, built on the official mono image. Sonarr runs as user `sonarr` with `uid` and `gid` `1000` and listens on port `8989`.
 
 ## Usage
 
