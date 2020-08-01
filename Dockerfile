@@ -17,4 +17,5 @@ VOLUME /config /downloads /series
 WORKDIR /opt/NzbDrone
 
 EXPOSE 7878
-ENTRYPOINT ["mono", "/opt/NzbDrone/NzbDrone.exe", "-data=/config", "-nobrowser"]
+ENTRYPOINT ["mono"]
+CMD ["/opt/NzbDrone/NzbDrone.exe", "-data=/config", "-nobrowser"]
