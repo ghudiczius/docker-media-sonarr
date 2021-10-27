@@ -1,4 +1,4 @@
-FROM mono:6.8.0.96
+FROM mono:6.12.0.107
 
 ARG VERSION
 
