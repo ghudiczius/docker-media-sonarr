@@ -7,7 +7,7 @@ ENV CURL_VERSION=7.88.1-10+deb12u8
 # renovate: release=bullseye depName=libsqlite3-0
 ENV LIBSQLITE3_VERSION=3.40.1-2+deb12u1
 # renovate: release=bullseye depName=mediainfo
-ENV MEDIAINFO_VERSION=18.12-2
+ENV MEDIAINFO_VERSION=23.04-1
 
 RUN apt-get update && \
     apt-get --assume-yes install \
