@@ -10,7 +10,7 @@ ENV LIBSQLITE3_VERSION=3.40.1-2+deb12u1
 ENV MEDIAINFO_VERSION=23.04-1
 
 RUN apt-get update && \
-    apt-get --assume-yes install \
+    apt-get --assume-yes --quiet install \
         curl="${CURL_VERSION}" \
         libsqlite3-0="${LIBSQLITE3_VERSION}" \
         mediainfo="${MEDIAINFO_VERSION}" && \
