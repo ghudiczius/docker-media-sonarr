@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/runtime:9.0
 ARG VERSION
 
 # renovate: release=bullseye depName=curl
-ENV CURL_VERSION=7.64.0-4+deb10u9
+ENV CURL_VERSION=7.88.1-10+deb12u8
 # renovate: release=bullseye depName=libsqlite3-0
 ENV LIBSQLITE3_VERSION=3.27.2-3+deb10u2
 # renovate: release=bullseye depName=mediainfo
