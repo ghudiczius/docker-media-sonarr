@@ -7,7 +7,7 @@ stages:
 
 kaniko:
   image:
-    name: gcr.io/kaniko-project/executor:v1.23.0-debug
+    name: gcr.io/kaniko-project/executor:v1.23.2-debug
     entrypoint: [""]
   rules:
   - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
