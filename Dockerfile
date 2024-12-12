@@ -5,7 +5,7 @@ ARG VERSION
 # renovate: release=bullseye depName=curl
 ENV CURL_VERSION=7.64.0-4+deb10u9
 # renovate: release=bullseye depName=libsqlite3-0
-ENV LIBSQLITE3_VERSION=3.27.2-3+deb10u2
+ENV LIBSQLITE3_VERSION=3.40.1-2+deb12u1
 # renovate: release=bullseye depName=mediainfo
 ENV MEDIAINFO_VERSION=18.12-2
 
