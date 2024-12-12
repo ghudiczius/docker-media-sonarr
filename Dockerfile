@@ -16,10 +16,10 @@ RUN apt-get update && \
         mediainfo="${MEDIAINFO_VERSION}" && \
     groupadd --gid=1000 radarr && \
     useradd --gid=1000 --home-dir=/opt/sonarr --no-create-home --shell /bin/bash --uid 1000 sonarr && \
-    mkdir /config /downloads /series && \
+    mkdir /config /downloads /series /opt/sonarr && \
     curl --location --output /tmp/sonarr.tar.gz "https://github.com/Sonarr/Sonarr/releases/download/v${VERSION}/Sonarr.main.${VERSION}.linux-x64.tar.gz" && \
     tar xzf /tmp/sonarr.tar.gz --directory=/opt/sonarr --strip-components=1 && \
-    chown --recursive 1000:1000 /config /downloads /series && \
+    chown --recursive 1000:1000 /config /downloads /series /opt/sonarr && \
     rm /tmp/sonarr.tar.gz
 
 USER 1000
