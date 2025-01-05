@@ -28,4 +28,5 @@ VOLUME /config /downloads /series
 WORKDIR /opt/sonarr
 
 EXPOSE 7878
-CMD ["/opt/sonarr/Sonarr", "-data=/config", "-nobrowser"]
+ENTRYPOINT ["/opt/sonarr/Sonarr"]
+CMD ["-data=/config", "-nobrowser"]
