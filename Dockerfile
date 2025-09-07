@@ -6,7 +6,7 @@ ARG VERSION
 # renovate: release=bookworm depName=curl
 ENV CURL_VERSION=7.88.1-10+deb12u14
 # renovate: release=bookworm depName=libsqlite3-0
-ENV LIBSQLITE_VERSION=3.40.1-2+deb12u1
+ENV LIBSQLITE_VERSION=3.40.1-2+deb12u2
 # renovate: release=bookworm depName=mediainfo
 ENV MEDIAINFO_VERSION=23.04-1
 
