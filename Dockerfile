@@ -14,7 +14,7 @@ RUN apk add --no-cache --update \
     addgroup -g 1000 sonarr && \
     adduser -D -G sonarr -h /opt/sonarr -H -s /bin/sh -u 1000 sonarr && \
     mkdir /config /downloads /series /opt/sonarr && \
-    curl --location --output /tmp/sonarr.tar.gz "https://github.com/Sonarr/Sonarr/releases/download/v${VERSION}/Sonarr.${SOURCE_CHANNEL}.${VERSION}.linux-x64.tar.gz" && \
+    curl --location --output /tmp/sonarr.tar.gz "https://github.com/Sonarr/Sonarr/releases/download/v${VERSION}/Sonarr.${SOURCE_CHANNEL}.${VERSION}.linux-musl-x64.tar.gz" && \
     tar xzf /tmp/sonarr.tar.gz --directory=/opt/sonarr --strip-components=1 && \
     chown --recursive 1000:1000 /config /downloads /series /opt/sonarr && \
     rm /tmp/sonarr.tar.gz
